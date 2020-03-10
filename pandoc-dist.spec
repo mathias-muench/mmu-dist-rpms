@@ -1,5 +1,3 @@
-# vim: filetype=spec :
-
 %undefine _disable_source_fetch
 
 Name:          pandoc-dist
