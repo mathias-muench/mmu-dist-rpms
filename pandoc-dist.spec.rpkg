@@ -1,0 +1,30 @@
+# vim: filetype=spec :
+
+%undefine _disable_source_fetch
+
+Name:          {{{ git_dir_name }}}
+Version:       2.9.2
+Release:       0
+Summary:       Universal markup converter
+License:       GPLv2+
+URL:           https://pandoc.org/
+
+ExclusiveOS:   linux
+ExclusiveArch: x86_64
+AutoReqProv:   no
+
+Provides:      pandoc
+
+Source:        https://github.com/jgm/pandoc/releases/download/%{version}/pandoc-%{version}-linux-amd64.tar.gz
+
+%description
+%{summary}
+
+%prep
+{{{ git_dir_setup_macro }}}
+
+%install
+%{__install} -D pandoc %{buildroot}%{_bindir}/pandoc
+
+%files
+%attr(755,root,root) %{_bindir}/pandoc
