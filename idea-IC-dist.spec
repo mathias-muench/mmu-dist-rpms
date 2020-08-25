@@ -26,6 +26,7 @@ Provides:      %{dist_name}
 
 %global debug_package %{nil}
 %global __jar_repack %{nil}
+%global __brp_mangle_shebangs %{nil}
 
 %description
 %{summary}
@@ -34,6 +35,7 @@ Provides:      %{dist_name}
 %setup -q -n %{dist_name}-%{idea_build}
 
 %install
+export QA_RPATHS=$(( 0x0004|0x0008 ))
 %{__mkdir_p} %{buildroot}%{idea_home}
 %{__cp} -R ./ %{buildroot}%{idea_home}
 
