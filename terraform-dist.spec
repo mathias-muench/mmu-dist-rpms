@@ -1,7 +1,7 @@
 %undefine _disable_source_fetch
 
 Name:          terraform-dist
-Version:       0.13.0
+Version:       0.12.29
 Release:       0
 Summary:       Terraform enables you to safely and predictably create, change, and improve infrastructure. It is an open source tool that codifies APIs into declarative configuration files that can be shared amongst team members, treated as code, edited, reviewed, and versioned.
 License:       MPLv2.0
