@@ -49,6 +49,7 @@ EOF
 %{idea_home}/bin
 %doc %{idea_home}/build.txt
 %doc %{idea_home}/Install-Linux-tar.txt
+%{idea_home}/icons.db
 %{idea_home}/jbr
 %{idea_home}/lib
 %doc %{idea_home}/license
