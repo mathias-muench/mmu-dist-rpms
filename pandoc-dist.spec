@@ -2,7 +2,7 @@
 
 Name:          pandoc-dist
 Version:       2.11.3.2
-Release:       0
+Release:       1%{?dist}
 Summary:       Universal markup converter
 License:       GPLv2+
 URL:           https://github.com/jgm/pandoc/releases/latest

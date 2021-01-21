@@ -2,7 +2,7 @@
 
 Name:          packer-dist
 Version:       1.6.6
-Release:       1
+Release:       2%{?dist}
 Summary:       Packer is a tool for creating identical machine images for multiple platforms from a single source configuration.
 License:       MPLv2.0
 URL:           https://www.packer.io/downloads.html
