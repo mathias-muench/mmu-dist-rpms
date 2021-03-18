@@ -2,10 +2,10 @@
 
 %global dist_name idea-IC
 %global idea_home /opt/idea-IC
-%global idea_build 203.5981.155
+%global idea_build 203.7717.56
 
 Name:          idea-IC-dist
-Version:       2020.3
+Version:       2020.3.3
 Release:       0%{?dist}
 Summary:       Intelligent Java IDE
 
