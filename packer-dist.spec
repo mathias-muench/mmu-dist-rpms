@@ -1,7 +1,7 @@
 %undefine _disable_source_fetch
 
 Name:          packer-dist
-Version:       1.7.9
+Version:       1.7.10
 Release:       2%{?dist}
 Summary:       Packer is a tool for creating identical machine images for multiple platforms from a single source configuration.
 License:       MPLv2.0
