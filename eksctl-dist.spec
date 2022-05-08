@@ -15,8 +15,6 @@ Provides:      eksctl
 
 Source:        https://github.com/weaveworks/eksctl/releases/download/v%{version}/eksctl_Linux_amd64.tar.gz
 
-%global debug_package %{nil}
-
 %description
 %{summary}
 
