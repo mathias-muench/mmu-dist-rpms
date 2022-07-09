@@ -1,7 +1,7 @@
 %undefine _disable_source_fetch
 
 Name:          flux-dist
-Version:       0.31.3
+Version:       0.30.2
 Release:       0%{?dist}
 Summary:       The official CLI for Amazon EKS 
 License:       ASL 2.0
