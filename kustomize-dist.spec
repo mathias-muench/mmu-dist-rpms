@@ -5,7 +5,7 @@ Version:       4.5.5
 Release:       0%{?dist}
 Summary:       The official CLI for Amazon EKS 
 License:       ASL 2.0
-URL:           https://github.com/weaveworks/kustomize/releases
+URL:           https://github.com/kubernetes-sigs/kustomize/releases
 
 ExclusiveOS:   linux
 ExclusiveArch: x86_64
