@@ -1,7 +1,7 @@
 %undefine _disable_source_fetch
 
 Name:          eksctl-dist
-Version:       0.115.0
+Version:       0.120.0
 Release:       4%{?dist}
 Summary:       The official CLI for Amazon EKS 
 License:       ASL 2.0
