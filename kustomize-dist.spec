@@ -1,7 +1,7 @@
 %undefine _disable_source_fetch
 
 Name:          kustomize-dist
-Version:       4.5.7
+Version:       5.0.0
 Release:       0%{?dist}
 Summary:       The official CLI for Amazon EKS 
 License:       ASL 2.0
