@@ -1,6 +1,6 @@
 %undefine _disable_source_fetch
 
-%global dist_release rc.3
+%global dist_release rc.5
 
 Name:          flux-dist
 Version:       2.0.0
