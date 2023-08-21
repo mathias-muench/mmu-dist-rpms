@@ -1,10 +1,8 @@
 %undefine _disable_source_fetch
 
-%global dist_release rc.5
-
 Name:          flux-dist
-Version:       2.0.0
-Release:       %{dist_release}_1%{?dist}
+Version:       2.0.1
+Release:       0%{?dist}
 Summary:       The official CLI for Amazon EKS 
 License:       ASL 2.0
 URL:           https://github.com/fluxcd/flux2/releases/latest
@@ -15,7 +13,7 @@ AutoReqProv:   no
 
 Provides:      flux
 
-Source:        https://github.com/fluxcd/flux2/releases/download/v%{version}-%{dist_release}/flux_%{version}-%{dist_release}_linux_amd64.tar.gz
+Source:        https://github.com/fluxcd/flux2/releases/download/v%{version}/flux_%{version}_linux_amd64.tar.gz
 
 %global debug_package %{nil}
 
