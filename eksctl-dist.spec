@@ -1,8 +1,8 @@
 %undefine _disable_source_fetch
 
 Name:          eksctl-dist
-Version:       0.153.0
-Release:       4%{?dist}
+Version:       0.156.0
+Release:       6%{?dist}
 Summary:       The official CLI for Amazon EKS 
 License:       ASL 2.0
 URL:           https://github.com/weaveworks/eksctl/releases/latest
@@ -32,3 +32,8 @@ echo 'eval "$(eksctl completion bash)"' >%{buildroot}%{_datarootdir}/bash-comple
 %defattr (-, root, root, 755)
 %{_bindir}/eksctl
 %{_datarootdir}/bash-completion/completions/eksctl
+
+%changelog
+* Fri Sep 08 2023 Mathias Muench <Mathias.Muench@de.bosch.com> - 0.156.0-6
+- rebuilt
+

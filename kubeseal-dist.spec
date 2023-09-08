@@ -1,8 +1,8 @@
 %undefine _disable_source_fetch
 
 Name:          kubeseal-dist
-Version:       0.23.0
-Release:       1%{?dist}
+Version:       0.23.1
+Release:       3%{?dist}
 Summary:       A Kubernetes controller and tool for one-way encrypted Secrets
 License:       ASL 2.0
 URL:           https://github.com/bitnami-labs/sealed-secrets/releases/latest
@@ -33,3 +33,8 @@ Source:        https://github.com/bitnami-labs/sealed-secrets/releases/download/
 %{_bindir}/kubeseal
 %doc %{_docdir}/kubeseal/LICENSE
 %doc %{_docdir}/kubeseal/README.md
+
+%changelog
+* Fri Sep 08 2023 Mathias Muench <Mathias.Muench@de.bosch.com> - 0.23.1-3
+- rebuilt
+

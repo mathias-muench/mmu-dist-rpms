@@ -1,8 +1,8 @@
 %undefine _disable_source_fetch
 
 Name:          pandoc-dist
-Version:       3.1.6.1
-Release:       1%{?dist}
+Version:       3.1.7
+Release:       3%{?dist}
 Summary:       Universal markup converter
 License:       GPLv2+
 URL:           https://github.com/jgm/pandoc/releases/latest
@@ -29,3 +29,8 @@ Source:        https://github.com/jgm/pandoc/releases/download/%{version}/pandoc
 %defattr (-, root, root, 755)
 %{_bindir}/pandoc
 %doc %{_mandir}/man1/pandoc.1.gz
+
+%changelog
+* Fri Sep 08 2023 Mathias Muench <Mathias.Muench@de.bosch.com> - 3.1.7-3
+- rebuilt
+
