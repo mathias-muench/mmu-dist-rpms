@@ -1,6 +1,6 @@
 spec=pandoc-dist.spec
 outdir=$(shell rpm --eval '%{_srcrpmdir}')
-root=fedora-36-x86_64
+root=fedora-38-x86_64
 
 srpm:
 	rpmbuild --undefine=_disable_source_fetch --define='_srcrpmdir $(outdir)' -bs $(spec)
