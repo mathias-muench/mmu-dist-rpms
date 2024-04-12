@@ -1,11 +1,11 @@
 %undefine _disable_source_fetch
 
 Name:          eksctl-dist
-Version:       0.174.0
+Version:       0.175.0
 Release:       6%{?dist}
 Summary:       The official CLI for Amazon EKS 
 License:       ASL 2.0
-URL:           https://github.com/weaveworks/eksctl/releases/latest
+URL:           https://github.com/eksctl-io/eksctl/releases/latest
 
 ExclusiveOS:   linux
 ExclusiveArch: x86_64
@@ -13,7 +13,7 @@ AutoReqProv:   no
 
 Provides:      eksctl
 
-Source:        https://github.com/weaveworks/eksctl/releases/download/v%{version}/eksctl_Linux_amd64.tar.gz
+Source:        https://github.com/eksctl-io/eksctl/releases/download/v%{version}/eksctl_Linux_amd64.tar.gz
 
 %global debug_package %{nil}
 
