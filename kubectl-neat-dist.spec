@@ -1,7 +1,7 @@
 %undefine _disable_source_fetch
 
 Name:          kubectl-neat-dist
-Version:       2.0.3
+Version:       2.0.4
 Release:       0%{?dist}
 Summary:       A Kubernetes controller and tool for one-way encrypted Secrets
 License:       ASL 2.0

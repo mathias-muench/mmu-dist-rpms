@@ -1,7 +1,7 @@
 %undefine _disable_source_fetch
 
 Name:          k9s-dist
-Version:       0.32.4
+Version:       0.32.5
 Release:       3%{?dist}
 Summary:       Kubernetes CLI To Manage Your Clusters In Style!
 License:       ASL 2.0
