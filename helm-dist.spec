@@ -1,7 +1,7 @@
 %undefine _disable_source_fetch
 
 Name:          helm-dist
-Version:       3.15.3
+Version:       3.15.4
 Release:       1%{?dist}
 Summary:       The official CLI for Amazon EKS 
 License:       ASL 2.0

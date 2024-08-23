@@ -1,7 +1,7 @@
 %undefine _disable_source_fetch
 
 Name:          yamlfmt-dist
-Version:       0.13.1
+Version:       0.13.0
 Release:       1%{?dist}
 Summary:       An extensible command line tool or library to format yaml files.
 License:       ASL 2.0

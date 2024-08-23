@@ -3,7 +3,7 @@
 Name:          kubectl-neat-dist
 Version:       2.0.4
 Release:       0%{?dist}
-Summary:       A Kubernetes controller and tool for one-way encrypted Secrets
+Summary:       Clean up Kubernetes yaml and json output to make it readable 
 License:       ASL 2.0
 URL:           https://github.com/itaysk/kubectl-neat/releases/latest
 
