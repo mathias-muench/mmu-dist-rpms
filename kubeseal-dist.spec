@@ -1,7 +1,7 @@
 %undefine _disable_source_fetch
 
 Name:          kubeseal-dist
-Version:       0.27.2
+Version:       0.27.3
 Release:       3%{?dist}
 Summary:       A Kubernetes controller and tool for one-way encrypted Secrets
 License:       ASL 2.0
