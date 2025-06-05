@@ -15,6 +15,8 @@ Provides:      pandoc
 
 Source:        https://github.com/jgm/pandoc/releases/download/%{version}/pandoc-%{version}-linux-amd64.tar.gz
 
+%global debug_package %{nil}
+
 %description
 %{summary}
 
