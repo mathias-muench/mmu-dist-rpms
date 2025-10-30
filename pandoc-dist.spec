@@ -1,7 +1,7 @@
 %undefine _disable_source_fetch
 
 Name:          pandoc-dist
-Version:       3.8
+Version:       3.8.2.1
 Release:       3%{?dist}
 Summary:       Universal markup converter
 License:       GPLv2+
