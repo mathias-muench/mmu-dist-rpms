@@ -2,7 +2,7 @@
 
 Name:          adr-tools-dist
 Version:       3.0.0
-Release:       5%{?dist}
+Release:       6%{?dist}
 Summary:       Command-line tools for working with Architecture Decision Records 
 License:       GPL-3.0-or-later
 URL:           https://github.com/google/adr-tools/releases/latest
@@ -26,7 +26,7 @@ Source:        https://github.com/npryce/adr-tools/archive/refs/tags/%{version}.
 %build
 cat <<EOF >adr.sh
 #!/bin/sh
-exec %{_libexecdir}/adr-tools/adr
+exec %{_libexecdir}/adr-tools/adr "$@"
 EOF
 
 %install
@@ -42,6 +42,9 @@ EOF
 %doc %{_docdir}/adr-tools/
 
 %changelog
+* Mon Dec 08 2025 Mathias Muench <mathias-muench@users.noreply.github.com> - 3.0.0-6
+- rebuilt
+
 * Mon Dec 08 2025 Mathias Muench <mathias-muench@users.noreply.github.com> - 3.0.0-5
 - rebuilt
 
