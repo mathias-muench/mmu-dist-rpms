@@ -5,7 +5,7 @@ Version:       3.0.0
 Release:       7%{?dist}
 Summary:       Command-line tools for working with Architecture Decision Records 
 License:       GPL-3.0-or-later
-URL:           https://github.com/google/adr-tools/releases/latest
+URL:           https://github.com/npryce/adr-tools/releases/latest
 
 ExclusiveOS:   linux
 ExclusiveArch: x86_64
