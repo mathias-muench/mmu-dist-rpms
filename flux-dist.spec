@@ -1,5 +1,3 @@
-%undefine _disable_source_fetch
-
 Name:          flux-dist
 Version:       2.8.8
 Release:       2%{?dist}

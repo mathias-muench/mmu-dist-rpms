@@ -1,5 +1,3 @@
-%undefine _disable_source_fetch
-
 Name:          kubectl-neat-dist
 Version:       2.0.4
 Release:       0%{?dist}

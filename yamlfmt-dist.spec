@@ -1,5 +1,3 @@
-%undefine _disable_source_fetch
-
 Name:          yamlfmt-dist
 Version:       0.21.0
 Release:       1%{?dist}

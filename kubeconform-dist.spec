@@ -1,5 +1,3 @@
-%undefine _disable_source_fetch
-
 Name:          kubeconform-dist
 Version:       0.7.0
 Release:       1%{?dist}

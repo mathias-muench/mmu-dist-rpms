@@ -1,5 +1,3 @@
-%undefine _disable_source_fetch
-
 Name:          kubeseal-dist
 Version:       0.37.0
 Release:       4%{?dist}

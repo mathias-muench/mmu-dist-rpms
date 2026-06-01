@@ -1,5 +1,3 @@
-%undefine _disable_source_fetch
-
 Name:          kubelogin-dist
 Version:       0.2.17
 Release:       1%{?dist}
