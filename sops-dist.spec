@@ -1,3 +1,5 @@
+%undefine _disable_source_fetch
+
 Name:          sops-dist
 Version:       3.13.1
 Release:       1%{?dist}
@@ -13,7 +15,6 @@ Provides:      sops
 
 Source0:       https://github.com/getsops/sops/releases/download/v%{version}/sops-v%{version}.linux.amd64
 
-%undefine _disable_source_fetch
 %define __spec_install_post %{nil}
 %global debug_package %{nil}
 

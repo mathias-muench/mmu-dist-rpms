@@ -1,3 +1,5 @@
+%undefine _disable_source_fetch
+
 Name:          copilot-dist
 Version:       1.0.55
 Release:       1%{?dist}
@@ -13,7 +15,6 @@ Provides:      copilot
 
 Source:        https://github.com/github/copilot-cli/releases/download/v%{version}/copilot-linux-x64.tar.gz
 
-%undefine _disable_source_fetch
 %define __spec_install_post %{nil}
 %global debug_package %{nil}
 
