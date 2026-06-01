@@ -1,3 +1,5 @@
+%undefine _disable_source_fetch
+
 Name:          copilot-dist
 Version:       1.0.55
 Release:       1%{?dist}

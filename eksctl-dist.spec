@@ -1,3 +1,5 @@
+%undefine _disable_source_fetch
+
 Name:          eksctl-dist
 Version:       0.227.0
 Release:       6%{?dist}

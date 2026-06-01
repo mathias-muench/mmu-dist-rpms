@@ -1,3 +1,5 @@
+%undefine _disable_source_fetch
+
 Name:          adr-tools-dist
 Version:       3.0.0
 Release:       7%{?dist}

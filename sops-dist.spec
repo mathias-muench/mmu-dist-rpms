@@ -1,3 +1,5 @@
+%undefine _disable_source_fetch
+
 Name:          sops-dist
 Version:       3.13.1
 Release:       1%{?dist}
