@@ -1,7 +1,7 @@
 %undefine _disable_source_fetch
 
 Name:          kubeconform-dist
-Version:       0.7.0
+Version:       0.8.0
 Release:       1%{?dist}
 Summary:       A FAST Kubernetes manifests validator, with support for Custom Resources! 
 License:       Apache-2.0

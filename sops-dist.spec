@@ -1,7 +1,7 @@
 %undefine _disable_source_fetch
 
 Name:          sops-dist
-Version:       3.13.1
+Version:       3.13.2
 Release:       1%{?dist}
 Summary:       Simple and flexible tool for managing secrets
 License:       MPL-2.0

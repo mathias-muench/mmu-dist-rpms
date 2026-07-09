@@ -1,11 +1,11 @@
 %undefine _disable_source_fetch
 
 Name:          kubeseal-dist
-Version:       0.37.0
-Release:       4%{?dist}
+Version:       0.38.4
+Release:       5%{?dist}
 Summary:       A Kubernetes controller and tool for one-way encrypted Secrets
 License:       Apache-2.0
-URL:           https://github.com/bitnami-labs/sealed-secrets/releases/latest
+URL:           https://github.com/bitnami/sealed-secrets/releases/latest
 
 ExclusiveOS:   linux
 ExclusiveArch: x86_64
@@ -13,7 +13,7 @@ AutoReqProv:   no
 
 Provides:      kubeseal
 
-Source:        https://github.com/bitnami-labs/sealed-secrets/releases/download/v%{version}/kubeseal-%{version}-linux-amd64.tar.gz
+Source:        https://github.com/bitnami/sealed-secrets/releases/download/v%{version}/kubeseal-%{version}-linux-amd64.tar.gz
 
 %global debug_package %{nil}
 
@@ -35,6 +35,10 @@ Source:        https://github.com/bitnami-labs/sealed-secrets/releases/download/
 %doc %{_docdir}/kubeseal/README.md
 
 %changelog
+* Thu Jul 09 2026 Mathias Muench <mathias-muench@users.noreply.github.com> - 0.38.4-5
+- Update to new upstream version 0.38.4
+- Update URL/Source: repo moved from bitnami-labs/sealed-secrets to bitnami/sealed-secrets
+
 * Wed Dec 17 2025 Mathias Muench <mathias-muench@users.noreply.github.com> - 0.33.1-4
 - rebuilt
 
