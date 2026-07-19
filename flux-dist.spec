@@ -1,7 +1,7 @@
 %undefine _disable_source_fetch
 
 Name:          flux-dist
-Version:       2.9.1
+Version:       2.9.2
 Release:       2%{?dist}
 Summary:       The official CLI for Amazon EKS 
 License:       ASL 2.0
@@ -34,6 +34,8 @@ echo 'eval "$(flux completion bash)"' >%{buildroot}%{_datarootdir}/bash-completi
 %{_datarootdir}/bash-completion/completions/flux
 
 %changelog
+* Mon Jul 20 2026 Mathias Muench <mathias-muench@users.noreply.github.com> - 2.9.2-1
+- update to 2.9.2
 * Fri Sep 08 2023 Mathias Muench <Mathias.Muench@de.bosch.com> - 2.1.0-2
 - rebuilt
 
