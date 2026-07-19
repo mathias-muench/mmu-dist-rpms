@@ -36,6 +36,6 @@ echo 'eval "$(flux completion bash)"' >%{buildroot}%{_datarootdir}/bash-completi
 %changelog
 * Mon Jul 20 2026 Mathias Muench <mathias-muench@users.noreply.github.com> - 2.9.2-1
 - update to 2.9.2
-* Fri Sep 08 2023 Mathias Muench <Mathias.Muench@de.bosch.com> - 2.1.0-2
+* Fri Sep 08 2023 Mathias Muench <mathias-muench@users.noreply.github.com> - 2.1.0-2
 - rebuilt
 

@@ -42,6 +42,6 @@ Source:        https://github.com/bitnami/sealed-secrets/releases/download/v%{ve
 * Wed Dec 17 2025 Mathias Muench <mathias-muench@users.noreply.github.com> - 0.33.1-4
 - rebuilt
 
-* Fri Sep 08 2023 Mathias Muench <Mathias.Muench@de.bosch.com> - 0.23.1-3
+* Fri Sep 08 2023 Mathias Muench <mathias-muench@users.noreply.github.com> - 0.23.1-3
 - rebuilt
 

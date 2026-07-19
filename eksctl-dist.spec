@@ -34,6 +34,6 @@ echo 'eval "$(eksctl completion bash)"' >%{buildroot}%{_datarootdir}/bash-comple
 %{_datarootdir}/bash-completion/completions/eksctl
 
 %changelog
-* Fri Sep 08 2023 Mathias Muench <Mathias.Muench@de.bosch.com> - 0.156.0-6
+* Fri Sep 08 2023 Mathias Muench <mathias-muench@users.noreply.github.com> - 0.156.0-6
 - rebuilt
 

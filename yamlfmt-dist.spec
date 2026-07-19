@@ -35,6 +35,6 @@ Source:        https://github.com/google/yamlfmt/releases/download/v%{version}/y
 %doc %{_docdir}/yamlfmt/README.md
 
 %changelog
-* Fri Mar 22 2024 Mathias Muench <Mathias.Muench@de.bosch.com> - 0.11.0-1
+* Fri Mar 22 2024 Mathias Muench <mathias-muench@users.noreply.github.com> - 0.11.0-1
 - rebuilt
 
