@@ -1,7 +1,7 @@
 %undefine _disable_source_fetch
 
 Name:          opencode-dist
-Version:       1.18.3
+Version:       1.18.9
 Release:       1%{?dist}
 Summary:       OpenCode - The open source coding agent
 License:       MIT
@@ -38,5 +38,5 @@ Source:        https://github.com/anomalyco/opencode/releases/download/v%{versio
 %{_datarootdir}/bash-completion/completions/opencode
 
 %changelog
-* Mon Jul 20 2026 Mathias Muench <mathias-muench@users.noreply.github.com> - 1.18.3-1
-- Initial package
+* Wed Jul 29 2026 Mathias Muench <mathias-muench@users.noreply.github.com> - 1.18.9-1
+- Update to 1.18.9

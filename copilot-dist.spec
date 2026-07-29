@@ -1,7 +1,7 @@
 %undefine _disable_source_fetch
 
 Name:          copilot-dist
-Version:       1.0.71
+Version:       1.0.75
 Release:       1%{?dist}
 Summary:       GitHub Copilot CLI brings the power of Copilot coding agent directly to your terminal.
 License:       Proprietary
@@ -35,6 +35,9 @@ echo 'eval "$(copilot completion bash)"' >%{buildroot}%{_datarootdir}/bash-compl
 %{_datarootdir}/bash-completion/completions/copilot
 
 %changelog
+* Wed Jul 29 2026 Mathias Muench <mathias-muench@users.noreply.github.com> - 1.0.75-1
+- Update to 1.0.75
+
 * Mon Jul 20 2026 Mathias Muench <mathias-muench@users.noreply.github.com> - 1.0.71-1
 - update to 1.0.71
 * Fri May 29 2026 Mathias Muench <mathias-muench@users.noreply.github.com> - 1.0.55-1

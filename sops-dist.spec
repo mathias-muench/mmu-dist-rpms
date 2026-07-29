@@ -1,7 +1,7 @@
 %undefine _disable_source_fetch
 
 Name:          sops-dist
-Version:       3.13.2
+Version:       3.13.3
 Release:       1%{?dist}
 Summary:       Simple and flexible tool for managing secrets
 License:       MPL-2.0
@@ -31,6 +31,9 @@ Source0:       https://github.com/getsops/sops/releases/download/v%{version}/sop
 %{_bindir}/sops
 
 %changelog
+* Wed Jul 29 2026 Mathias Muench <mathias-muench@users.noreply.github.com> - 3.13.3-1
+- Update to 3.13.3
+
 * Mon Jun 01 2026 Mathias Muench <mathias-muench@users.noreply.github.com> - 3.13.1-1
 - rebuilt
 
