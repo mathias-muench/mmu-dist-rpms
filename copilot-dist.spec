@@ -2,7 +2,7 @@
 
 Name:          copilot-dist
 Version:       1.0.75
-Release:       1%{?dist}
+Release:       2%{?dist}
 Summary:       GitHub Copilot CLI brings the power of Copilot coding agent directly to your terminal.
 License:       Proprietary
 URL:           https://github.com/github/copilot-cli/releases/latest
@@ -24,10 +24,13 @@ Source:        https://github.com/github/copilot-cli/releases/download/v%{versio
 %prep
 %setup -q -c
 
+%build
+./copilot completion bash > copilot.bash-completion
+
 %install
 %{__install} -m 0755 -D copilot %{buildroot}%{_bindir}/copilot
 %{__mkdir_p} %{buildroot}%{_datarootdir}/bash-completion/completions
-echo 'eval "$(copilot completion bash)"' >%{buildroot}%{_datarootdir}/bash-completion/completions/copilot
+%{__install} -m 0644 -D copilot.bash-completion %{buildroot}%{_datarootdir}/bash-completion/completions/copilot
 
 %files
 %defattr (-, root, root, 755)
@@ -35,6 +38,9 @@ echo 'eval "$(copilot completion bash)"' >%{buildroot}%{_datarootdir}/bash-compl
 %{_datarootdir}/bash-completion/completions/copilot
 
 %changelog
+* Wed Jul 29 2026 Mathias Muench <mathias-muench@users.noreply.github.com> - 1.0.75-2
+- Generate bash completion in %build phase
+
 * Wed Jul 29 2026 Mathias Muench <mathias-muench@users.noreply.github.com> - 1.0.75-1
 - Update to 1.0.75
 

@@ -2,7 +2,7 @@
 
 Name:          flux-dist
 Version:       2.9.3
-Release:       2%{?dist}
+Release:       3%{?dist}
 Summary:       The official CLI for Amazon EKS 
 License:       ASL 2.0
 URL:           https://github.com/fluxcd/flux2/releases/latest
@@ -23,10 +23,13 @@ Source:        https://github.com/fluxcd/flux2/releases/download/v%{version}/flu
 %prep
 %setup -q -c
 
+%build
+./flux completion bash > flux.bash-completion
+
 %install
 %{__install} -m 0755 -D flux %{buildroot}%{_bindir}/flux
 %{__mkdir_p} %{buildroot}%{_datarootdir}/bash-completion/completions
-echo 'eval "$(flux completion bash)"' >%{buildroot}%{_datarootdir}/bash-completion/completions/flux
+%{__install} -m 0644 -D flux.bash-completion %{buildroot}%{_datarootdir}/bash-completion/completions/flux
 
 %files
 %defattr (-, root, root, 755)
@@ -34,6 +37,9 @@ echo 'eval "$(flux completion bash)"' >%{buildroot}%{_datarootdir}/bash-completi
 %{_datarootdir}/bash-completion/completions/flux
 
 %changelog
+* Wed Jul 29 2026 Mathias Muench <mathias-muench@users.noreply.github.com> - 2.9.3-3
+- Generate bash completion in %build phase
+
 * Wed Jul 29 2026 Mathias Muench <mathias-muench@users.noreply.github.com> - 2.9.3-2
 - Update to 2.9.3
 
