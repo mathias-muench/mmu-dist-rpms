@@ -62,9 +62,51 @@ copr-cli add-package-scm mmu-dist-rpms \
 |---------|-------------|
 | `copr-cli whoami` | Verify authentication |
 | `copr-cli list-packages PROJECT` | List packages |
-| `copr-cli add-package-scm PROJECT --name NAME --spec FILE.spec --clone-url URL` | Add SCM package |
+| `copr-cli add-package-scm PROJECT --name NAME --spec FILE.spec --clone-url URL --webhook-rebuild on` | Add SCM package with auto-rebuild |
+| `copr-cli edit-package-scm PROJECT --name NAME --webhook-rebuild on/off` | Enable/disable auto-rebuild on existing package |
+| `copr-cli list-packages PROJECT` | List packages with JSON config (shows `auto_rebuild`) |
 | `copr-cli build PROJECT SRPM_FILE` | Build from SRPM |
 | `copr-cli list-builds PROJECT` | View builds |
+
+## Manage Package Config
+
+Check existing package configuration (JSON output includes `auto_rebuild` flag):
+
+```bash
+copr-cli list-packages mmu-dist-rpms
+```
+
+Enable or disable automatic rebuilds on push for an existing package:
+
+```bash
+copr-cli edit-package-scm mmu-dist-rpms --name opencode-dist --webhook-rebuild on
+copr-cli edit-package-scm mmu-dist-rpms --name opencode-dist --webhook-rebuild off
+```
+
+## Verify Builds
+
+List recent builds and their status:
+
+```bash
+copr-cli list-builds mmu-dist-rpms
+```
+
+Check the exact version-release that was built (useful to confirm spec changes deployed):
+
+```bash
+curl -s https://copr.fedorainfracloud.org/api_3/build/BUILD_ID | python3 -c "import sys,json; d=json.load(sys.stdin); print(d['source']['version'])"
+```
+
+Compare local spec versions against latest COPR builds:
+
+```bash
+for spec in *.spec; do
+  pkg="${spec%.spec}"
+  ver=$(grep '^Version:' "$spec" | awk '{print $2}')
+  rel=$(grep '^Release:' "$spec" | awk '{print $2}' | sed 's/%{?dist}//')
+  echo "$pkg: $ver-$rel"
+done
+```
 
 ## Troubleshooting
 
