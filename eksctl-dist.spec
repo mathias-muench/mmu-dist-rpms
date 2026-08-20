@@ -1,8 +1,8 @@
 %undefine _disable_source_fetch
 
 Name:          eksctl-dist
-Version:       0.229.0
-Release:       7%{?dist}
+Version:       0.230.0
+Release:       1%{?dist}
 Summary:       The official CLI for Amazon EKS 
 License:       ASL 2.0
 URL:           https://github.com/eksctl-io/eksctl/releases/latest
@@ -37,6 +37,9 @@ Source:        https://github.com/eksctl-io/eksctl/releases/download/v%{version}
 %{_datarootdir}/bash-completion/completions/eksctl
 
 %changelog
+* Thu Aug 20 2026 Mathias Muench <mathias-muench@users.noreply.github.com> - 0.230.0-1
+- Update to 0.230.0
+
 * Wed Jul 29 2026 Mathias Muench <mathias-muench@users.noreply.github.com> - 0.229.0-7
 - Generate bash completion in %build phase
 
