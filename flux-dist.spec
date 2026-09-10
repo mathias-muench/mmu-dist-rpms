@@ -1,7 +1,7 @@
 %undefine _disable_source_fetch
 
 Name:          flux-dist
-Version:       2.9.4
+Version:       2.9.5
 Release:       1%{?dist}
 Summary:       The official CLI for Amazon EKS 
 License:       ASL 2.0
@@ -37,6 +37,9 @@ Source:        https://github.com/fluxcd/flux2/releases/download/v%{version}/flu
 %{_datarootdir}/bash-completion/completions/flux
 
 %changelog
+* Thu Sep 10 2026 Mathias Muench <mathias-muench@users.noreply.github.com> - 2.9.5-1
+- Update to 2.9.5
+
 * Thu Aug 20 2026 Mathias Muench <mathias-muench@users.noreply.github.com> - 2.9.4-1
 - Update to 2.9.4
 
