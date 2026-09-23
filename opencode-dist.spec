@@ -1,7 +1,7 @@
 %undefine _disable_source_fetch
 
 Name:          opencode-dist
-Version:       1.18.30
+Version:       1.18.32
 Release:       1%{?dist}
 Summary:       OpenCode - The open source coding agent
 License:       MIT

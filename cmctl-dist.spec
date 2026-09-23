@@ -1,7 +1,7 @@
 %undefine _disable_source_fetch
 
 Name:          cmctl-dist
-Version:       2.5.0
+Version:       2.6.1
 Release:       2%{?dist}
 Summary:       cmctl is the command line utility that makes cert-manager easier to use
 License:       Apache-2.0

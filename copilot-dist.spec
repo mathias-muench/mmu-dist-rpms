@@ -1,7 +1,7 @@
 %undefine _disable_source_fetch
 
 Name:          copilot-dist
-Version:       1.0.83
+Version:       1.0.88
 Release:       1%{?dist}
 Summary:       GitHub Copilot CLI brings the power of Copilot coding agent directly to your terminal.
 License:       Proprietary

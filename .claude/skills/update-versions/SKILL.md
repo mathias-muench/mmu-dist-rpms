@@ -18,7 +18,3 @@ Binaries in upstream (mostly github artifacts) have new releases and the user wa
 2. **Update the version field in all rpm spec files accordingly**
 
 3. **Verfiy rpm spec files** are still syntactically correct.
-
-## Notes / conventions to respect
-
-- Do not reset releases. They track the versions of the rpm spec file independently.
