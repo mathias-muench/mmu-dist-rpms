@@ -1,7 +1,7 @@
 %undefine _disable_source_fetch
 
 Name:          bun-dist
-Version:       1.4.2
+Version:       1.4.3
 Release:       1%{?dist}
 Summary:       Bun is a fast JavaScript runtime, package manager, bundler, and test runner
 License:       MIT

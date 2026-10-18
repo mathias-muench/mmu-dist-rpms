@@ -1,7 +1,7 @@
 %undefine _disable_source_fetch
 
 Name:          kubelogin-dist
-Version:       0.2.20
+Version:       0.2.21
 Release:       2%{?dist}
 Summary:       A Kubernetes credential (exec) plugin implementing azure authentication 
 License:       MIT
