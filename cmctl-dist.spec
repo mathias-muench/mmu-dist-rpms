@@ -13,7 +13,7 @@ AutoReqProv:   no
 
 Provides:      cmctl
 
-Source:        https://github.com/cert-manager/cmctl/releases/download/v%{version}/cmctl_linux_amd64.tar.gz
+Source:        https://github.com/cert-manager/cmctl/releases/download/v%{version}/cmctl_linux_amd64.tar.gz#/cmctl_linux_amd64-%{version}.tar.gz
 
 %define __spec_install_post %{nil}
 %global debug_package %{nil}

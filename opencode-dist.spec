@@ -13,7 +13,7 @@ AutoReqProv:   no
 
 Provides:      opencode
 
-Source:        https://github.com/anomalyco/opencode/releases/download/v%{version}/opencode-linux-x64.tar.gz
+Source:        https://github.com/anomalyco/opencode/releases/download/v%{version}/opencode-linux-x64.tar.gz#/opencode-linux-x64-%{version}.tar.gz
 
 %define __spec_install_post %{nil}
 %global debug_package %{nil}

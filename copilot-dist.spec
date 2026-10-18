@@ -13,7 +13,7 @@ AutoReqProv:   no
 
 Provides:      copilot
 
-Source:        https://github.com/github/copilot-cli/releases/download/v%{version}/copilot-linux-x64.tar.gz
+Source:        https://github.com/github/copilot-cli/releases/download/v%{version}/copilot-linux-x64.tar.gz#/copilot-linux-x64-%{version}.tar.gz
 
 %define __spec_install_post %{nil}
 %global debug_package %{nil}

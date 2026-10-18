@@ -13,7 +13,7 @@ AutoReqProv:   no
 
 Provides:      bun
 
-Source:        https://github.com/oven-sh/bun/releases/download/bun-v%{version}/bun-linux-x64.zip
+Source:        https://github.com/oven-sh/bun/releases/download/bun-v%{version}/bun-linux-x64.zip#/bun-linux-x64-%{version}.zip
 
 %define __spec_install_post %{nil}
 %global debug_package %{nil}

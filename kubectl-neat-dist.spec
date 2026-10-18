@@ -13,7 +13,7 @@ AutoReqProv:   no
 
 Provides:      kubectl-neat
 
-Source:        https://github.com/itaysk/kubectl-neat/releases/download/v%{version}/kubectl-neat_linux_amd64.tar.gz
+Source:        https://github.com/itaysk/kubectl-neat/releases/download/v%{version}/kubectl-neat_linux_amd64.tar.gz#/kubectl-neat_linux_amd64-%{version}.tar.gz
 
 %global debug_package %{nil}
 

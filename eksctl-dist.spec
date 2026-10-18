@@ -13,7 +13,7 @@ AutoReqProv:   no
 
 Provides:      eksctl
 
-Source:        https://github.com/eksctl-io/eksctl/releases/download/v%{version}/eksctl_Linux_amd64.tar.gz
+Source:        https://github.com/eksctl-io/eksctl/releases/download/v%{version}/eksctl_Linux_amd64.tar.gz#/eksctl_Linux_amd64-%{version}.tar.gz
 
 %global debug_package %{nil}
 

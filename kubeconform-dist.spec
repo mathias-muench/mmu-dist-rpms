@@ -13,7 +13,7 @@ AutoReqProv:   no
 
 Provides:      kubeconform
 
-Source:        https://github.com/yannh/kubeconform/releases/download/v%{version}/kubeconform-linux-amd64.tar.gz
+Source:        https://github.com/yannh/kubeconform/releases/download/v%{version}/kubeconform-linux-amd64.tar.gz#/kubeconform-linux-amd64-%{version}.tar.gz
 
 %global debug_package %{nil}
 

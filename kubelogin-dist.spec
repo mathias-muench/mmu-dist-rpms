@@ -13,7 +13,7 @@ AutoReqProv:   no
 
 Provides:      kubelogin
 
-Source:        https://github.com/Azure/kubelogin/releases/download/v%{version}/kubelogin-linux-amd64.zip
+Source:        https://github.com/Azure/kubelogin/releases/download/v%{version}/kubelogin-linux-amd64.zip#/kubelogin-linux-amd64-%{version}.zip
 
 %global debug_package %{nil}
 
